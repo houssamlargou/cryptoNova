@@ -1,8 +1,12 @@
+@import url("https://fonts.googleapis.com/css2?family=Inria+Serif:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Jura:wght@300..700&family=League+Spartan:wght@100..900&display=swap");
+
 .hero {
+  background-color: #101123;
+}
+
+.hero:has(.checkbox:checked) {
   width: 100vw;
   height: 100vh;
-  background-color: #101123;
-  position: relative;
   overflow: hidden;
 }
 
@@ -131,4 +135,216 @@
 
 li {
   list-style: none;
+}
+
+.hero-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-top: 4rem;
+  gap: 4rem;
+}
+
+.primary-header {
+  font-size: 4.8rem;
+  /* font-weight: bold; */
+  text-align: center;
+  line-height: 1.2;
+  color: #fff;
+  font-family: "Jura", sans-serif;
+}
+
+.hero-para {
+  font-size: 2rem;
+  font-weight: bold;
+  text-align: center;
+  color: #fff;
+  opacity: 0.6;
+  width: 23rem;
+  height: 5.8rem;
+}
+
+.hero-btn {
+  width: 31.2rem;
+  height: 6.5rem;
+  font-size: 2rem;
+  font-weight: bold;
+  border-radius: 4.8rem;
+  background-color: #0ea3ff;
+  text-align: center;
+}
+
+.hero-img {
+  width: 28.8rem;
+  height: 38rem;
+}
+
+.pourquoi {
+  padding-top: 10rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 5rem;
+  background-color: #101123;
+}
+
+.pourquoi-header {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+h2 {
+  font-size: 2.4rem;
+  font-weight: bold;
+  font-family: "Inria Serif", serif;
+  color: #0099ff;
+  text-align: center;
+}
+
+.section-para {
+  width: 35.4rem;
+  height: 7.2rem;
+  opacity: 0.5;
+  text-align: center;
+  padding: 0 1rem;
+  font-size: 1.8rem;
+  font-family: "Inria Serif", serif;
+  font-weight: bold;
+  color: #fff;
+  opacity: 0.5;
+}
+
+.pourquoi-cards-container {
+  display: flex;
+  flex-direction: column;
+  gap: 5rem;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.card-icon {
+  width: 12rem;
+  height: 12rem;
+}
+
+.card-icon path {
+  fill: #0099ff;
+}
+
+.tertiary-header {
+  font-size: 2.4rem;
+  color: #37ff00;
+  font-family: "Inria Serif", serif;
+}
+
+.card-para {
+  width: 25rem;
+  height: 6.9rem;
+  font-size: 1.6rem;
+  font-family: "Inria Serif", serif;
+  text-align: center;
+  color: #fff;
+  opacity: 0.8;
+}
+
+.community-para {
+  /* font-size: 1.8rem;
+  font-family: "Inria Serif", serif;
+  font-weight: bold;
+  color: #fff;
+  opacity: 0.5; */
+}
+
+.community {
+  background-color: #101123;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 8rem;
+  gap: 5rem;
+}
+
+.community-header {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.community-cards-container {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.community-card {
+  width: 30rem;
+  height: 15rem;
+  border-radius: 1.5rem;
+  background-color: rgba(217, 217, 217, 0.3);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.community-card-statistic {
+  font-family: "Inria Serif", serif;
+  font-weight: bold;
+  color: #37ff00;
+  font-size: 3.6rem;
+}
+
+.community-card-para {
+  color: #fff;
+  font-size: 1.8rem;
+  font-weight: bold;
+  font-family: "Inria Serif", serif;
+}
+
+.history-container {
+  width: 100vw;
+  padding: 0 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.history-card {
+  width: 34rem;
+  height: 14rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border-radius: 1.5rem;
+  background-color: rgba(217, 217, 217, 0.3);
+  padding-left: 3rem;
+}
+
+.history-card:nth-child(2) {
+  align-self: end;
+}
+.history-card:nth-child(4) {
+  align-self: end;
+}
+
+.history-card-para {
+  font-family: "Inria Serif", serif;
+  font-weight: 400;
+  font-style: italic;
+  font-size: 1.6rem;
+  color: #fff;
+}
+
+.author {
+  font-family: "Inria Serif", serif;
+  font-weight: bold;
+  font-size: 1.6rem;
+  color: #00e1ff;
 }
